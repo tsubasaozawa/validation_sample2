@@ -2,15 +2,11 @@
   .field
     = form.label :title
     = form.text_field :title
-      -# エラーメッセージの表示②-------------------------
-      - if @post.errors.messages[:title].any?
-      -# --------------------------------------------
+
   .field
     = form.label :content
     = form.text_area :content
-      -# エラーメッセージの表示③-------------------------
-      - if @post.errors.messages[:content].any?
-      -# --------------------------------------------
+
   .field
     = form.label :image
     = form.text_area :image

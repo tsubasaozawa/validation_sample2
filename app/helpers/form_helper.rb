@@ -1,5 +1,5 @@
-module FormHelper                                                               
-  class CustomFormHelper < ActionView::Helpers::FormBuilder
+module FormHelper # モジュール名。ここはファイル名と同じにする。
+  class CustomFormHelper < ActionView::Helpers::FormBuilder # 継承後のクラス名は任意のもので問題ないが、親クラスはActionView::Helpers::FormBuilder
 
     # ①エラーメッセージを含んだ要素を生成してあげる記述
     def pick_errors(attribute)
