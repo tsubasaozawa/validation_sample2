@@ -23,5 +23,11 @@ module FormHelper # モジュール名。ここはファイル名と同じにす
       super + pick_errors(attribute)
     end
 
+    def select(attribute, choices, options={}) # selectには第二引数に都道府県の情報が入るため、choicesで受けてあげる
+      return super if options[:no_errors]
+      super + pick_errors(attribute)
+    end
+
+
   end
 end  
